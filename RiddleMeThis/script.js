@@ -250,11 +250,11 @@ function checkAnswer(choice, correctAnswer, selectedLi) {
     let timeTaken = 10 - timeLeft; // Calculate time taken to answer
 
     if (choice === correctAnswer) {
-        let points = Math.max(50, Math.floor(1000 / timeTaken)); // Calculate points based on time taken
+        let points = Math.max(100, Math.floor(1000 / timeTaken)); // Calculate points based on time taken
         score += points;
         selectedLi.style.backgroundColor = '#32c292'; // Correct answer
     } else {
-        let pointsDeducted = Math.max(20, Math.floor(1000 / timeTaken)); // Calculate points to deduct based on time taken
+        let pointsDeducted = Math.max(50, Math.floor(1000 / timeTaken)); // Calculate points to deduct based on time taken
         score -= pointsDeducted;
         selectedLi.style.backgroundColor = '#F72585'; // Incorrect answer
     }
@@ -266,7 +266,7 @@ function checkAnswer(choice, correctAnswer, selectedLi) {
     document.getElementById('score').textContent = score;
     clearInterval(timerId);
 
-    setTimeout(showNextRiddle, 1000); // Wait a second before showing next riddle
+    setTimeout(showNextRiddle, 2000); // Wait a second before showing next riddle
 }
 
 
