@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riddle Me This!</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -13,28 +14,37 @@
     </header>
 
     <main>
+        
         <button id="start-button" class="start-button">Start Game</button>
+        
         
         <section class="riddle" style="display: none;">
             <h2>Timed Riddles</h2>
             <p id="riddle-question"></p>
         </section>
         <ul class="choices" id="riddle-choices" style="display: none;"></ul>
-        <button id="back-button" style="display: none;">Back to Main Menu</button>
+        
         <div class="score" style="display: none;">Score: <span id="score" class="score-value">0</span></div>
-        <div class="timer" id="timer" style="display: none;"></div>
+        <div class="timer" id="timer" style="display: none;">
+            <svg id="timer-svg" width="100" height="100">
+                <circle id="timer-circle" cx="50" cy="50" r="40" stroke-width="10" fill="none" />
+                <text id="timer-text" class="timer-number" x="50" y="55" text-anchor="middle" fill="white" font-size="20px" transform="rotate(90, 50, 50)">10</text>
+            </svg>
 
+        </div>
+        
+        <button class ="back-button" id="back-button" style="display: none;">Back</button>
         
         
         
     </main>
 
   
-    <script src="riddles.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="riddles.js"></script>
+    <script type="module" src="script.js"></script>
 
 
-    <footer id="footer" style="padding-top: 10px; padding-right: 15px; padding-bottom: 5px; padding-left: 10px; position: fixed; bottom: 0; left: 0; color: rgb(0, 247, 255);">
+    <footer id="footer" style="padding-top: 10px; padding-right: 15px; padding-bottom: 5px; padding-left: 10px; position: fixed; bottom: 0; left: 0; color: rgb(255, 255, 255);">
         Made by Kyan Wiseley
     </footer>
     
