@@ -10,24 +10,20 @@ const riddles = [
         answer: 'Candle'
     },
     {
-        question: 'What is full of holes but still holds water?',
-        choices: ['Sponge', 'Bucket', 'Cheese'],
-        answer: 'Sponge'
-    },
-    {
         question: 'What comes once in a minute, twice in a moment, but never in a thousand years?',
         choices: ['Time', 'Letter M', 'Opportunity'],
         answer: 'Letter M'
-    },
+    }
+    ,
     {
         question: 'What can travel around the world while staying in a corner?',
         choices: ['Ball', 'Stamp', 'Postage'],
         answer: 'Stamp'
     },
     {
-        question: 'What has keys but can’t open locks?',
-        choices: ['Piano', 'Computer', 'Map'],
-        answer: 'Piano'
+        question: 'What word becomes shorter when you add two letters to it?',
+        choices: ['tall', 'short', 'subtract'],
+        answer: 'short'
     },
     {
         question: 'The more of this there is, the less you see. What is it?',
@@ -40,13 +36,8 @@ const riddles = [
         answer: 'Coin'
     },
     {
-        question: 'What has a neck but no head?',
-        choices: ['Turtle', 'Bottle', 'Giraffe'],
-        answer: 'Bottle'
-    },
-    {
         question: 'What has words but never speaks?',
-        choices: ['Book', 'Dictionary', 'Painting'],
+        choices: ['Book', 'Animal', 'Painting'],
         answer: 'Book'
     },
     {
@@ -75,11 +66,6 @@ const riddles = [
         answer: 'Keyboard'
     },
     {
-        question: 'What is full of holes but still holds water?',
-        choices: ['Sponge', 'Bucket', 'Cheese'],
-        answer: 'Sponge'
-    },
-    {
         question: 'What has one eye but can’t see?',
         choices: ['Needle', 'Cyclops', 'Camera'],
         answer: 'Needle'
@@ -90,19 +76,9 @@ const riddles = [
         answer: 'Towel'
     },
     {
-        question: 'What has keys but can’t open locks?',
-        choices: ['Piano', 'Computer', 'Map'],
-        answer: 'Piano'
-    },
-    {
-        question: 'What has many keys but can’t open a single lock?',
-        choices: ['Keyboard', 'Piano', 'Calculator'],
-        answer: 'Keyboard'
-    },
-    {
-        question: 'What has cities, but no houses; forests, but no trees; and water, but no fish?',
-        choices: ['Map', 'Globe', 'Internet'],
-        answer: 'Map'
+        question: 'What has many keys but can’t unlock anything?',
+        choices: ['Song', 'Janitor', 'Key Master'],
+        answer: 'Song'
     },
     {
         question: 'What can be cracked, made, told, and played?',
@@ -115,13 +91,8 @@ const riddles = [
         answer: 'Artichoke'
     },
     {
-        question: 'What has keys but can’t open locks?',
-        choices: ['Piano', 'Computer', 'Map'],
-        answer: 'Piano'
-    },
-    {
         question: 'What has a thumb and four fingers but isn’t alive?',
-        choices: ['Glove', 'Hand', 'Mitten'],
+        choices: ['Glove', 'Hand', 'Monkey'],
         answer: 'Glove'
     },
     {
@@ -140,41 +111,159 @@ const riddles = [
         answer: 'Comb'
     },
     {
-        question: 'What can travel around the world while staying in a corner?',
-        choices: ['Ball', 'Stamp', 'Postage'],
-        answer: 'Stamp'
+        question: 'What has a ring but no finger?',
+        choices: ['Telephone', 'Planet', 'Engagement Ring'],
+        answer: 'Planet'
+    },
+    {
+        question: 'What has a bed but never sleeps?',
+        choices: ['River', 'Garden', 'Train'],
+        answer: 'River'
+    },
+    {
+        question: 'What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?',
+        choices: ['River', 'Clock', 'Refrigerator'],
+        answer: 'River'
+    },
+    {
+        question: 'What has a heart that doesn’t beat?',
+        choices: ['Artichoke', 'Stone', 'Book'],
+        answer: 'Artichoke'
+    },
+    {
+        question: 'What comes down but never goes up?',
+        choices: ['Rain', 'Stairs', 'Shadow'],
+        answer: 'Rain'
+    },
+    {
+        question: 'I shave every day, but my beard stays the same. What am I?',
+        choices: ['Barber', 'Clock', 'Mountain'],
+        answer: 'Barber'
+    },
+    {
+        question: 'What has many keys but can’t open a single lock?',
+        choices: ['Piano', 'Map', 'Computer'],
+        answer: 'Piano'
+    },
+    {
+        question: 'What has a thumb and four fingers but is not alive?',
+        choices: ['Glove', 'Hand', 'Robot'],
+        answer: 'Glove'
+    },
+    {
+        question: 'What has a head, a tail, is brown, and has no legs?',
+        choices: ['Coin', 'Horse', 'Chair'],
+        answer: 'Coin'
+    },
+    {
+        question: 'What gets wetter as it dries?',
+        choices: ['Towel', 'Paint', 'Clay'],
+        answer: 'Towel'
+    },
+    {
+        question: 'What has one eye but cannot see?',
+        choices: ['Needle', 'Cyclops', 'Potato'],
+        answer: 'Needle'
+    },
+    {
+        question: 'What is so fragile that saying its name breaks it?',
+        choices: ['Silence', 'Glass', 'Bubble'],
+        answer: 'Silence'
+    },
+    {
+        question: 'What has a ring but no finger?',
+        choices: ['Telephone', 'Jewelry', 'Planet'],
+        answer: 'Telephone'
+    },
+    {
+        question: 'What is full of holes but still holds water?',
+        choices: ['Sponge', 'Net', 'Bucket'],
+        answer: 'Sponge'
+    },
+    {
+        question: 'What belongs to you, but others use it more than you do?',
+        choices: ['Your name', 'Your money', 'Your clothes'],
+        answer: 'Your name'
     },
     {
         question: 'What goes up but never comes down?',
-        choices: ['Age', 'Mountain', 'Kite'],
+        choices: ['Age', 'Smoke', 'Helium balloon'],
         answer: 'Age'
     },
-    { question: 'What has a ring but no finger?', choices: ['Telephone', 'Planet', 'Engagement Ring'], answer: 'Planet'},
-    { question: 'What has a bed but never sleeps?', choices: ['River', 'Garden', 'Train'], answer: 'River' },
-    { question: 'What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?', choices: ['River', 'Clock', 'Refrigerator'], answer: 'River' },
-    { question: 'What has a heart that doesn’t beat?', choices: ['Artichoke', 'Stone', 'Book'], answer: 'Artichoke' },
-    { question: 'What comes down but never goes up?', choices: ['Rain', 'Stairs', 'Shadow'], answer: 'Rain' },
-    { question: 'I shave every day, but my beard stays the same. What am I?', choices: ['Barber', 'Clock', 'Mountain'], answer: 'Barber' },
-    { question: 'What has many keys but can’t open a single lock?', choices: ['Piano', 'Map', 'Computer'], answer: 'Piano' },
-    { question: 'What has a thumb and four fingers but is not alive?', choices: ['Glove', 'Hand', 'Robot'], answer: 'Glove' },
-    { question: 'What has a head, a tail, is brown, and has no legs?', choices: ['Coin', 'Horse', 'Chair'], answer: 'Coin' },
-    { question: 'What can travel around the world while staying in a corner?', choices: ['Stamp', 'Plane', 'Wind'], answer: 'Stamp' },
-    { question: 'What gets wetter as it dries?', choices: ['Towel', 'Paint', 'Clay'], answer: 'Towel' },
-    { question: 'What can be broken, but is never held?', choices: ['Promise', 'Glass', 'Silence'], answer: 'Promise' },
-    { question: 'What has a neck but no head?', choices: ['Bottle', 'Giraffe', 'Violin'], answer: 'Bottle' },
-    { question: 'What has one eye but cannot see?', choices: ['Needle', 'Cyclops', 'Potato'], answer: 'Needle' },
-    { question: 'What is so fragile that saying its name breaks it?', choices: ['Silence', 'Glass', 'Bubble'], answer: 'Silence' },
-    { question: 'What has a ring but no finger?', choices: ['Telephone', 'Jewelry', 'Planet'], answer: 'Telephone' },
-    { question: 'What is full of holes but still holds water?', choices: ['Sponge', 'Net', 'Bucket'], answer: 'Sponge' },
-    { question: 'What belongs to you, but others use it more than you do?', choices: ['Your name', 'Your money', 'Your clothes'], answer: 'Your name' },
-    { question: 'What goes up but never comes down?', choices: ['Age', 'Smoke', 'Helium balloon'], answer: 'Age' },
-    { question: 'What can you catch but not throw?', choices: ['Cold', 'Ball', 'Frisbee'], answer: 'Cold' },
-    { question: 'I’m tall when I’m young and short when I’m old. What am I?', choices: ['Candle', 'Tree', 'Person'], answer: 'Candle' },
-    { question: 'What has words, but never speaks?', choices: ['Book', 'Sign', 'Person'], answer: 'Book' },
-    { question: 'What runs around the whole yard without moving?', choices: ['Fence', 'Dog', 'Grass'], answer: 'Fence' },
-    { question: 'What can be cracked, made, told, and played?', choices: ['Joke', 'Egg', 'Code'], answer: 'Joke' },
-    { question: 'What has a bottom at the top?', choices: ['Your legs', 'A mountain', 'A bottle'], answer: 'A bottle' },
-    { question: 'What has a bank but no money?', choices: ['River', 'Game', 'Phone'], answer: 'River' }
+    {
+        question: 'What can you catch but not throw?',
+        choices: ['Cold', 'Ball', 'Frisbee'],
+        answer: 'Cold'
+    },
+    {
+        question: 'I’m tall when I’m young and short when I’m old. What am I?',
+        choices: ['Candle', 'Tree', 'Person'],
+        answer: 'Candle'
+    },
+    {
+        question: 'What has words, but never speaks?',
+        choices: ['Book', 'Sign', 'Person'],
+        answer: 'Book'
+    },
+    {
+        question: 'What runs around the whole yard without moving?',
+        choices: ['Fence', 'Dog', 'Grass'],
+        answer: 'Fence'
+    },
+    {
+        question: 'What can be cracked, made, told, and played?',
+        choices: ['Joke', 'Egg', 'Code'],
+        answer: 'Joke'
+    },
+    {
+        question: 'What has a bank but no money?',
+        choices: ['River', 'Game', 'Phone'],
+        answer: 'River'
+    },
+    {
+        question: 'What rock group consists of four famous men, but none of them sing?',
+        choices: ['The Beatles', 'Mount Rushmore', 'Queen'],
+        answer: 'Mount Rushmore'
+    },
+    {
+        question: 'I Start with M, end with X, and have a never-ending amount of letters. What am I?',
+        choices: ['Mailbox', 'Max', 'Matrix'],
+        answer: 'Mailbox'
+    },
+    {
+        question: 'What is orange and sounds like a parrot?',
+        choices: ['Carrot', 'Trump', 'Garfield'],
+        answer: 'Carrot'
+    },
+    {
+        question: 'What has fur but is not a mammal',
+        choices: ['Snake', 'Fern', 'Coconut'],
+        answer: 'Coconut'
+    },
+    {
+        question: 'I make a loud sound when I’m changing. When I do change, I get bigger but weigh less. What am I?',
+        choices: ['Matter', 'Butterfly', 'Popcorn'],
+        answer: 'Popcorn'
+    },
+    {
+        question: 'What blooms and is not a flower?',
+        choices: ['Algae', 'Cloud', 'Cactus'],
+        answer: 'Algae'
+    },
+    {
+        question: 'What fruit can you never cheer up?',
+        choices: ['Melon', 'Blueberry', 'Strawberry'],
+        answer: 'Blueberry'
+    }
 ];
 
-export default riddles;
+
+// Shuffle the riddles array
+riddles.sort(() => Math.random() - 0.5);
+
+// Shuffle the choices in each riddle
+riddles.forEach(riddle => {
+    riddle.choices.sort(() => Math.random() - 0.5);
+});
+
+export { riddles };
