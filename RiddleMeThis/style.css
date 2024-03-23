@@ -97,10 +97,52 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.back-button {
+    display: block;
+    height: 55px;
+    width: 80px;
+    padding: 15px;
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #003c9e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
 .score-value {
     font-size: 2rem; /* Adjust font size as needed */
-    font-weight: bold; /* Optionally make the score bold */
 }
+
+#timer-svg {
+    transform: rotate(-90deg); /* Rotate the SVG to start the animation from the top */
+}
+
+.timer-number {
+    font-family: Arial, sans-serif; /* Use a desired font */
+    font-weight: bold; /* Make the text bold */
+    fill: #007bff; /* Set the text color to white */
+}
+
+
+
+#timer-circle {
+    stroke: #007bff; /* Color of the timer circle */
+    stroke-dasharray: 251.2; /* Circumference of the circle (2 * π * 40) */
+    stroke-dashoffset: 251.2; /* Start with full circle */
+    transition: stroke-dashoffset 1s linear;
+}
+
+
+
 
 
 /* Responsive Design */
